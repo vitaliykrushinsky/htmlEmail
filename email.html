@@ -1,7 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Html Email</title>
+    <style type="text/css">
+        
+/*
+        body {
+            margin: 0;
+            padding: 0;
+        }
+*/
+        
+        @media only screen and (max-width: 660px) {
+            /* container */
+            table.container {
+                width: 480px !important;
+            }
+            
+            /* logo */
+            td.logo img {
+                display: none;
+            }
+            td.logo {
+                background: #fff url(images/logo_medium.gif) no-repeat 10px 10px;
+                height: 45px;
+            }
+            
+            /* headline */
+            td.headline {
+                padding: 5px 0px 0px 30px !important;
+            }
+            td.headline h1 {
+                font-size: 28px !important;
+            }
+            
+            /* banner */
+            td.banner img {
+                display: none;
+            }
+            td.banner {
+                width: 480px; 
+                height: 150px;
+                background: url(images/banner_medium.jpg) no-repeat 0px 0px;
+            }
+            
+            /* content */
+            td.content {
+                padding-bottom: 30px !important;
+                background: #f5f2e5 url(images/banner_medium_ghost.jpg) no-repeat !important;
+            }
+            td.content table.button {
+                width: auto;
+            }
+            td.content table.button td a {
+                font-size: 14px !important;
+            }
+            
+            /* promos */
+            td.promos table {
+                width: 200px !important;
+            }
+            td.promos table td h3 {
+                margin-bottom: 8px;
+            }
+            td.promos table td img {
+                display: none;
+            }
+            td.promos table.promo_1 td {
+                background: url(images/promo_1_medium.jpg) no-repeat 0px 0px;
+                padding-top: 100px;
+            }
+            td.promos table.promo_2 td {
+                background: url(images/promo_2_medium.jpg) no-repeat 0px 0px;
+                padding-top: 100px;
+            }
+            
+            /* callout */
+            td.callout table {
+                width: 50% !important;
+                margin-bottom: 40px;
+            }
+            td.callout table img {
+                display: none;
+            }
+            td.callout table br {
+                display: none;
+            }
+            td.callout table a {
+                display: block;
+                margin-top: 10px;
+            }
+            td.callout table td {
+                background-size: 65px 65px;
+            }
+            td.callout table.callout_1 td {
+                padding: 0px 30px 0px 60px !important;
+                background: url(images/icon_grapes.gif) no-repeat 0px -13px;
+            }
+            td.callout table.callout_2 td {
+                padding: 0px 20px 0px 60px !important;
+                background: url(images/icon_bottle.gif) no-repeat 0px -3px;
+            }
+            td.callout table.callout_3 td {
+                padding: 0px 30px 0px 60px !important;
+                background: url(images/icon_basket.gif) no-repeat 0px -13px;
+                clear: left;
+            }
+            td.callout table.callout_4 td {
+                padding: 0px 20px 0px 60px !important;
+                background: url(images/icon_camera.gif) no-repeat 0px -23px;
+            }
+        }
+        @media only screen and (max-width: 510px) {
+            /* container */
+            table.container {
+                width: 100% !important;
+            }
+            table.container td {
+                border: none !important;
+            }
+            
+            /* logo */
+            td.logo {
+                background: #fff url(images/logo_small.gif) no-repeat center 10px;
+                height: 32px;
+            }
+            
+            /* headline */
+            td.headline h1 {
+                font-size: 24px !important;
+                text-align: center;
+            }
+            
+            /* banner */
+            td.banner {
+                width: 480px; 
+                height: 115px;
+                background: url(images/banner_small.jpg) no-repeat right 0px;
+            }
+            
+            /* content */
+            td.content {
+                padding-bottom: 10px !important;
+                background: #f5f2e5 url(images/banner_small_ghost.jpg) no-repeat right 0px !important;
+                line-height: 20px;
+            }
+            
+            /* promos */
+            td.promos table {
+                width: 100% !important;
+                border-top: 1px solid #71a412;
+            }
+            td.promos table.promo_1 td {
+                background: url(images/promo_1_small.jpg) no-repeat 0px 40px;
+                padding: 20px 0px 40px 110px;
+            }
+/*
+            td.promos table.promo_2 {
+                border: none;
+            }
+*/
+            td.promos table.promo_2 td {
+                background: url(images/promo_2_small.jpg) no-repeat 0px 40px;
+                padding: 20px 0px 0px 110px;
+                clear: both;
+            }
+            
+            /* callout */
+            td.callout {
+                padding: 20px 30px 0px 30px !important;
+            }
+            td.callout table {
+                width: 100% !important;
+                margin-bottom: 20px;
+            }
+            td.callout table td {
+                padding: 0px 0px 10px 50px !important;
+                background-size: 50px 50px !important;
+                min-height: 60px;
+            }
+            td.callout table a {
+                display: inline;
+            }
+            td.callout table.callout_1 td {
+                background-position: 0px -6px
+            }
+            td.callout table.callout_2 td {
+                background-position: 4px -2px
+            }
+            td.callout table.callout_3 td {
+                background-position: 0px -8px
+            }
+            td.callout table.callout_4 td {
+                background-position: 4px -16px
+            }
+            td.callout table br.spacer {
+                display: inline;
+            }
+            /* footer */
+            td.footer {
+                padding: 20px 30px !important;
+            }
+        }
+    </style>
 </head>
 <body bgcolor="#efe1b0">
     <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#efe1b0">
@@ -76,8 +278,8 @@
                                     <td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 16px; color: #ffffff;">
                                       <img src="images/icon_grapes.gif" width="75" height="75"><br>
                                       Lorem ipsum dolor sit amet conctetur adipi eiu smod incid amet idun.
-                                      <br><br>
-                                      <a href="#">Learn more</a>
+                                      <br><br class="spacer">
+                                      <a href="#" style="color: #efe1b0;">Learn more</a>
                                     </td>
                                 </tr>
                             </table>
@@ -87,8 +289,8 @@
                                     <td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 16px; color: #ffffff;">
                                       <img src="images/icon_bottle.gif" width="75" height="75"><br>
                                       Ddolore eu fugiat nulla pariatur cupi datat excepteur occaet cupi noin.
-                                      <br><br>
-                                      <a href="#">Learn more</a>
+                                      <br><br class="spacer">
+                                      <a href="#" style="color: #efe1b0;">Learn more</a>
                                     </td>
                                 </tr>
                             </table>
@@ -98,8 +300,8 @@
                                 <td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; color: #ffffff;">
                                   <img src="images/icon_basket.gif" width="75" height="75"><br>
                                   Eiusmod tempor inci didunt ut magna aliqua ut enim ad iam quis.
-                                  <br><br>
-                                  <a href="#">Learn more</a>
+                                  <br><br class="spacer">
+                                  <a href="#" style="color: #efe1b0;">Learn more</a>
                                 </td>
                               </tr>
                             </table>
@@ -109,8 +311,8 @@
                                 <td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; color: #ffffff;">
                                   <img src="images/icon_camera.gif" width="75" height="75"><br>
                                   Excepteur sint occaecat cupidatat non proident sunt in culpa qui molit.
-                                  <br><br>
-                                  <a href="#">Learn more</a>
+                                  <br><br class="spacer">
+                                  <a href="#" style="color: #efe1b0;">Learn more</a>
                                 </td>
                               </tr>
                             </table>
